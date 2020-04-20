@@ -1,0 +1,630 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Body Text */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color:#000000;
+
+          
+}
+
+/* unvisited link */
+a:link {
+  color: #ffa700;
+}
+
+/* visited link */
+a:visited {
+  color: #2867e3;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ffd46d;
+}
+
+/* selected link */
+a:active {
+  color:#2867e3;
+}
+/* Navigation Elements*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  float: left;
+  padding: 12px;
+  width: 32%; /* links of equal widths */
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a:active {
+  background-color: #F38A04;
+  color: white;
+}
+
+@media (min-width: 480px) {
+    #hero { height: 500px; }
+}
+
+@media (min-width: 768px) {
+    #hero { height: 500px; }
+}
+
+@media (min-width: 992px) {
+    #hero{ height: 500px; }
+}
+
+
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/main/hero-omega.png") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  padding-top: 50%;
+  padding-left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+/* box-sizing:border-box;{}*/
+
+.main {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:right;
+  width:10%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+.center {
+  text-align: center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #F38A04;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 50px 2px;
+  cursor: pointer;
+  width:100%;
+  margin:0 auto;
+
+}
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+body  {
+ /* background-image: url("img/specs.jpg");*/
+  background-color: #ffffff;
+}
+
+/* Image Styling */
+.img-container {
+  position: relative;
+  text-align: center;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 20px;
+}
+.img-centered {
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#ffa700;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color:  #ffd46d;
+}
+
+.btn {
+	display: none;
+}
+
+img:hover + .btn, .btn:hover {
+	display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+	width: 100%;
+	overflow-x:auto;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+
+button {
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #ffa700;
+	border: none;
+	border-radius: 15px;
+}
+
+button:hover {background-color: #ffd46d}
+
+button:active {
+	background-color: #ffd46d;
+	box-shadow: 0 5px #666;
+	transform: translate(4px);
+}
+
+.inputLabel {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+input.inputField {
+	padding: 5px;
+	border: 1px solid #ffa700;
+}
+
+div.box {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+
+/*Radio Button Container */
+.radio-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide browser default radio button */
+.radio-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* radio button */
+.radio-checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* grey background color for hover*/
+.radio-container:hover input ~ .radio-checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a primary background */
+.radio-container input:checked ~ .radio-checkmark {
+	background-color: #ffa700;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .radio-checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .radio-checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* Checkbox container */
+.checkbox-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide browser default checkbox */
+.checkbox-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Custom checkbox */
+.checkbox-checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+}
+
+/* Grey background color over hover */
+.checkbox-container:hover input ~ .checkbox-checkmark {
+	background-color: #ccc;
+}
+
+/* Primary 1 background when box is checked */
+.checkbox-container input:checked ~ .checkbox-checkmark {
+	background-color: #ffa700;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkbox-checkmark:after {
+	display: block;
+}
+
+/* Style for checkmark/indicator */
+.checkbox-container .checkbox-checkmark:after {
+	left: 7px;
+	top: 6px;
+	width: 5px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#primary1 {
+	background-color: #eee7e7;
+	
+}
+
+#primary2 {
+	background-color: #ffd46d;
+}
+
+#primary3 {
+	background-color: #ffa700;
+}
+
+#primary4 {
+	background-color: #201e19;
+}
+
+#primary5 {
+	background-color: #2867e3;
+}
+
+.warning {
+	border-style: solid;
+	border-radius: 2px;
+	border-color: yellow;
+	background-color: white;
+	text-decoration: underline;
+	-webkit-text-decoration-color: yellow; /* Safari */  
+	text-decoration-color: yellow;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.danger {
+	border-style: solid;
+	border-radius: 2px;
+	border-color: red;
+	background-color: white;
+	text-decoration: underline;
+	-webkit-text-decoration-color: red; /* Safari */  
+	text-decoration-color: red;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.success {
+	border-style: solid;
+	border-radius: 2px;
+	border-color: green;
+	background-color: white;
+	text-decoration: underline;
+	-webkit-text-decoration-color: green; /* Safari */  
+	text-decoration-color: green;
+	font-weight: bold;
+	padding: 10px;
+}
+
+svg.svg-inline--fa {
+	color: white;
+}
+
+.spacer {
+	padding-top: 25px;
+}
+
+.spacer-body {
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_container {
+  padding: 2px 16px;
+}
+
+
+#footer {
+	border-top: 1px solid #dddddd;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	background-color: #333333;
+  padding: 50px;
+  color: #f2f2f2;
+
+}
+
+
+/* Login Page .css */
+
+.container {
+    text-align: center;
+    width: 800px;
+}
+
+#loginPageContainer {
+    margin-top: 150px;
+    padding: 25px; 
+
+}
+
+#containerLoggedInPage {
+    margin-top: 60px;
+
+}
+
+
+#logInForm {
+    display:none;
+
+}
+
+.toggleForms {
+    font-weight: bold;
+
+}
+
+.loginbutton {
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #ffa700;
+	border: none;
+	border-radius: 15px;
+    max-width:100
+}
+
+.loginbuttonbutton:hover {background-color: #ffd46d}
+
+.loginbutton:active {
+	background-color: #ffd46d;
+	box-shadow: 0 5px #666;
+	transform: translate(4px);
+}
+
+
+/* Provided from Theme .css */
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");

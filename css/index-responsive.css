@@ -1,0 +1,41 @@
+
+
+/* Body styles */
+body {
+  padding-top: 50px;
+}
+.starter-main {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+/* Container styles */
+.container {
+  width: auto;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.container-color {
+	width: auto;
+	margin-top: 50px;
+  max-width: 100%;
+	padding: 0 15px;
+	background-color: #eee7e7be;
+}
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: white;	
+
+	> .col,
+	> [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+	}
+}
+
