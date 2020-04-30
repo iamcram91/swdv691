@@ -13,14 +13,14 @@ body {
 /* Container styles */
 .container {
   width: auto;
-  max-width: 50%;
+  max-width: 80%;
   padding: 0 15px;
 }
 
 .container-color {
 	width: auto;
 	margin-top: 50px;
-  max-width: 100%;
+	max-width: 100%;
 	padding: 0 15px;
 	background-color: #eee7e7be;
 }
